@@ -103,7 +103,7 @@ const Blog = () => {
               <form onSubmit={addComment} className='flex flex-col items-start gap-4 max-w-lg'>
 
                 <input onChange={(e)=>setName(e.target.value)} value={name} type="text" placeholder='Name' required className='w-full p-2 border border-gray-300 rounded outline-none'/>
-                //controlled input field
+                {/* controlled input field */}
                 <textarea onChange={(e)=>setContent(e.target.value)} value={content}  placeholder='Comment' required className='w-full p-2 border border-gray-300 rounded outline-none h-48'></textarea>
 
                 <button type='submit' className='bg-primary text-white rounded p-2 px-8 hover:scale-102 transition-all cursor-pointer'>Submit</button>

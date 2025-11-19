@@ -1,52 +1,49 @@
 📝 AI-Powered Blog Application (MERN Stack)
 
-An advanced full-stack blog platform built using the MERN stack with integrated AI-powered blog content generation.
-Admin users can create, manage, and publish blogs, while readers can explore, search, and comment on posts.
-Images are optimized using ImageKit, and the entire app is deployed online.
+A full-stack blogging platform built using the MERN stack with integrated AI-powered blog content generation.
+The app supports admin-managed blog creation, AI-based content generation, ImageKit optimization, and full CRUD functionality.
 
 🚀 Features
 👥 User Features
 
-Browse all published blog posts
+View all published blogs
 
 Search blogs by title or category
 
-Filter blogs by predefined categories
+Filter blogs using category tags
 
-Read full blog with title, subtitle, date, image & description
+Read full articles with images, titles & descriptions
 
-Post comments on blog articles
+Add comments on blogs
 
-Share blogs on social platforms
+Share articles through social icons
 
-🛠️ Admin Features
+🔐 Admin Features
 
-Admin login & authentication
+Admin authentication
 
-Create new blog posts
+Create & publish blog posts
 
-Generate blog description using AI
+AI-generated blog content
 
-Upload & optimize images via ImageKit
+Upload & optimize images using ImageKit
 
-Publish / Unpublish blogs
+Edit, delete, publish/unpublish blogs
 
-Edit or delete blog posts
+Dashboard stats (blogs, drafts, comments)
 
-View dashboard stats (blogs, drafts, comments)
-
-Manage user comments (approve/delete)
+Manage comments (approve/delete)
 
 🤖 AI Integration
 
-AI auto-generates high-quality blog descriptions
+AI auto-generates long blog descriptions
 
-Improves writing workflow
+Removes manual writing workload
 
-Ensures consistent content creation
+Ensures quality & consistent content creation
 
 🧰 Tech Stack
-Frontend
+Frontend (client)
 
 React.js
 
@@ -54,7 +51,7 @@ HTML, CSS
 
 Tailwind CSS
 
-Backend
+Backend (server)
 
 Node.js
 
@@ -64,47 +61,46 @@ Database
 
 MongoDB
 
-Image Management
+Image Handling
 
-ImageKit (Upload, Compression, Optimization)
+ImageKit (image upload, compression, optimization)
 
 AI
 
-AI-based blog description generator (via API integration)
+AI-based blog description generator API
 
 Deployment
 
-Vercel (Frontend + Backend)
+Vercel
 
-📂 Folder Structure
+📁 Folder Structure
 AI-powered-Blog-App/
-│── backend/
-│   ├── controllers/
-│   ├── models/
-│   ├── routes/
-│   ├── config/
-│   └── index.js
+│── client/        # React frontend
+│   ├── src/
+│   ├── components/
+│   ├── pages/
+│   └── ...
 │
-└── frontend/
-    ├── src/
-    ├── components/
-    ├── pages/
-    ├── context/
-    └── App.js
+└── server/        # Node.js backend
+    ├── controllers/
+    ├── models/
+    ├── routes/
+    ├── config/
+    └── index.js
 
 ⚙️ Installation & Setup
 1️⃣ Clone the Repository
 git clone https://github.com/Sidaqdeep/AI-powered-Blog-App.git
 cd AI-powered-Blog-App
 
-2️⃣ Backend Setup
-cd backend
+2️⃣ Backend Setup (server)
+cd server
 npm install
 
 
-Create a .env file:
+Create .env file:
 
-MONGO_URI=your_mongodb_uri
+MONGO_URI=your_mongo_uri
 IMAGEKIT_PUBLIC_KEY=your_key
 IMAGEKIT_PRIVATE_KEY=your_key
 IMAGEKIT_URL_ENDPOINT=your_url
@@ -112,34 +108,35 @@ AI_API_KEY=your_ai_key
 JWT_SECRET=your_secret
 
 
-Start backend:
+Start server:
 
 npm run dev
 
-3️⃣ Frontend Setup
-cd frontend
+3️⃣ Frontend Setup (client)
+cd ../client
 npm install
 npm start
 
 🌐 Deployment
 
-This project is deployed using Vercel.
-All environment variables must be added in Vercel’s dashboard under Project Settings → Environment Variables.
+Frontend and backend deployed using Vercel
+
+Add environment variables inside Vercel project settings
 
 🎥 Demo
 
-(Add your live link or demo video here)
+(Add your live link here)
 
 🖼️ Screenshots
 
-(Add screenshots of homepage, admin dashboard, blog page, etc.)
+(Add homepage, admin dashboard, blog detail page screenshots)
 
-📌 Future Improvements
+📌 Future Enhancements
 
-Add user authentication
+Rich text blog editor
 
-Add rich-text blog editor
+User authentication for comments
 
-Add social login for comment posting
+Bookmark/favorite blogs
 
-Add pagination & infinite scrolling
+Infinite scroll / pagination
